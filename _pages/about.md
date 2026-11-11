@@ -27,4 +27,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-
+Thanks for stopping by! I am Sibibalan (Sibi) Jeevanandam, a PhD candidate in the School of Mechanical Engineering at Purdue University. 

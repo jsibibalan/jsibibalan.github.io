@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Purdue University | <a href='sjeevana@purdue.edu'>sjeevana@purdue.edu</a>
+subtitle: Purdue University | sjeevana [at] purdue [dot] edu
 
 profile:
   align: right
@@ -27,4 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Thanks for stopping by! I am Sibibalan (Sibi) Jeevanandam, a PhD candidate in the School of Mechanical Engineering at Purdue University. 
+Thanks for stopping by! 
+
+I am Sibibalan (Sibi) Jeevanandam, a PhD candidate in the School of Mechanical Engineering at Purdue University. 

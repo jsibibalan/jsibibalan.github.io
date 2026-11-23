@@ -7,7 +7,7 @@ subtitle: Purdue University | sjeevana [at] purdue [dot] edu
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   <!-- more_info: >
     <p>Ray W. Herrick Laboratories</p>
     <p>Purdue University</p>

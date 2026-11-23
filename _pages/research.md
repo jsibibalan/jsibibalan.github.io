@@ -48,7 +48,7 @@ Before my PhD, I worked on creating mathematical models for nonlinear mechanical
 
 ## Methods and tools
 
-For my research and course projects, I've learned and applied state estimation (Kalman filtering, set-membership), reachability analysis, system identification, model predictive control (MPC), hybrid systems, robust control co-design, adaptive control, and nonlinear dynamical modeling. I work mostly in MATLAB, but I have also worked in Python and C++.
+For my research and course projects, I've learned and applied state estimation (Kalman filtering, set-membership), system identification, model predictive control (MPC), adaptive control, hybrid systems, reachability analysis, robust control co-design, and nonlinear dynamical modeling. I work mostly in MATLAB, but I have also worked in Python and C++.
 
 ## Mentoring
 

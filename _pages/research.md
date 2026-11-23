@@ -13,6 +13,8 @@ My research sits at the intersection of **state estimation, system identificatio
 
 **The question.** In conditionally automated (SAE Level 3) driving, the vehicle drives but the human must be ready to take over. How the human behaves depends on internal states the car cannot measure, such as trust and mental workload. If a vehicle could estimate those states, it could adapt, for example by changing how much information it shows the driver, to improve safety. This is the focus of my dissertation.
 
+<img src="{{ '/assets/img/human-aware-driving.svg' | relative_url }}" alt="Loop showing how a human-aware vehicle estimates driver states and adapts" style="max-width:100%; margin: 1rem 0;">
+
 **What I've done.**
 
 - **Experiment Design.** I co-designed a <a href="https://www.sciencedirect.com/science/article/pii/S1369847825004243">novel experiment</a> to understand what factors affect human behavior during automated driving. The experiment was deployed on a medium-fidelity driving simulator built using Unreal Engine 5.

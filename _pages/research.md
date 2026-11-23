@@ -9,7 +9,9 @@ nav_order: 3
 
 My research sits at the intersection of **state estimation, system identification, and robust control**, applied to safety-critical systems. Rather than assuming noise is random with a known distribution, I treat uncertainty as **bounded** and use set-based methods to describe everything the system could be doing. 
 
-## Human-aware automated vehicles
+<hr>
+
+# Human-aware automated vehicles
 
 In conditionally automated (SAE Level 3) driving, the vehicle drives but the human must be ready to take over. How the human behaves depends on internal states the car cannot measure, such as trust and mental workload. If a vehicle could estimate those states, it could adapt, for example by changing how much information it shows the driver, to improve safety. This is the focus of my dissertation.
 
@@ -25,14 +27,16 @@ In conditionally automated (SAE Level 3) driving, the vehicle drives but the hum
 
 Identifying a model from data usually assumes a noise distribution. In many real settings the only thing you can credibly say is that noise stays within known bounds. I work on identification methods built on **reachability analysis**, which return the full set of models consistent with the data and the bounds. See *A Reachability-Oriented Approach to Linear System Identification Under Unknown Bounded Noise* (ACC 2026). -->
 
-## Robust control co-design for thermal management
+# Robust control co-design for thermal management
 
 I was fortunate to collaborate with my lab mate and apply set-based methods in a different application context.
 In co-design, the system and the controller are designed together. An example of this would be simultaneous design of the dimensions of aircraft components and its autopilot software. I worked on applying set-based robust control co-design to a *nonlinear thermal management system*, guaranteeing safe operation (satisfying maximum temperature constraints) under unknown but bounded heat loads. Existing linear robust co-design approaches cannot ensure that guarantee for this class of system. 
 
 <img src="{{ '/assets/img/robust-co-design.svg' | relative_url }}" alt="" style="max-width:100%; margin: 1rem 0;">
 
-## Earlier work
+<hr>
+
+# Earlier work
 
 Before my PhD, I worked on creating mathematical models for nonlinear mechanical systems.
 
@@ -40,16 +44,19 @@ Before my PhD, I worked on creating mathematical models for nonlinear mechanical
 
 - **Compliant rolling-sliding contact (Indian Institute of Technology Tirupati).** I modeled a cam-follower mechanism with a flexible follower, building both a detailed nonlinear model and simpler, faster versions, one of which closely matches the detailed model. I used a combination of analytical and finite-element formulations. The analysis showed that compliance produces higher-period and chaotic behavior, and I studied how load and damping affect it. The approach could support faster digital twins of compliant mechanisms.
 
-- **Nonlinear vibration absorbers (The Ohio State University).** As a summer research scholar, I analyzed the nonlinear dynamics of a vibration absorber using the multi-term harmonic balance method (MHBM). Unlike Runge-Kutta time integration, which steps the equations forward in time, MHBM turns the problem into a set of algebraic equations. 
+- **Nonlinear vibration absorbers (The Ohio State University).** As a summer research scholar, I analyzed the nonlinear dynamics of a vibration absorber using the multi-term harmonic balance method (MHBM). Unlike Runge-Kutta time integration, which steps the equations forward in time, MHBM turns the problem into a set of algebraic equations.
+
+<hr>
+
 
 <!-- ## Course projects
 
 - **Trajectory-tracking MPC for an autonomous race car.** I implemented a feedback-linearized model predictive controller in Python within a ROS2 framework to track a trajectory on the Monza F1 circuit. Adding an iterative learning control scheme reduced lateral tracking error by over 50% across laps. -->
 
-## Methods and tools
+# Methods and tools
 
 For my research and course projects, I've learned and applied state estimation (Kalman filtering, set-membership), system identification, model predictive control (MPC), adaptive control, hybrid systems, reachability analysis, robust control co-design, and nonlinear dynamical modeling. I work mostly in MATLAB, but I have also worked in Python and C++.
 
-## Mentoring
+# Mentoring
 
 I have mentored undergraduate researchers through Purdue's SURF program on projects including information-theoretic analysis of physiological signals, a real-time eye-gaze fixation classifier for automated driving, and the Unreal Engine driving simulator mentioned above.

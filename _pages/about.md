@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Purdue University | sjeevana [at] purdue [dot] edu
 

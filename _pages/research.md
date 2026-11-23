@@ -9,7 +9,7 @@ nav_order: 3
 
 My research sits at the intersection of **state estimation, system identification, and robust control**, applied to safety-critical systems. Rather than assuming noise is random with a known distribution, I treat uncertainty as **bounded** and use set-based methods to describe everything the system could be doing. 
 
-<hr>
+
 
 # Human-aware automated vehicles
 
@@ -32,21 +32,21 @@ Identifying a model from data usually assumes a noise distribution. In many real
 I was fortunate to collaborate with my lab mate and apply set-based methods in a different application context.
 In co-design, the system and the controller are designed together. An example of this would be simultaneous design of the dimensions of aircraft components and its autopilot software. I worked on applying set-based robust control co-design to a *nonlinear thermal management system*, guaranteeing safe operation (satisfying maximum temperature constraints) under unknown but bounded heat loads. Existing linear robust co-design approaches cannot ensure that guarantee for this class of system. 
 
-<img src="{{ '/assets/img/robust-co-design.svg' | relative_url }}" alt="" style="max-width:100%; margin: 1rem 0;">
+<img src="{{ '/assets/img/robust-co-design.svg' | relative_url }}" alt="" style="max-width:70%; margin: 1rem 0;">
 
-<hr>
+
 
 # Earlier work
 
 Before my PhD, I worked on creating mathematical models for nonlinear mechanical systems.
 
-<img src="{{ '/assets/img/cam-follower-schematic.svg' | relative_url }}" alt="" style="max-width:100%; margin: 1rem 0;">
+<img src="{{ '/assets/img/cam-follower-schematic.svg' | relative_url }}" alt="" style="max-width:70%; margin: 1rem 0;">
 
 - **Compliant rolling-sliding contact (Indian Institute of Technology Tirupati).** I modeled a cam-follower mechanism with a flexible follower, building both a detailed nonlinear model and simpler, faster versions, one of which closely matches the detailed model. I used a combination of analytical and finite-element formulations. The analysis showed that compliance produces higher-period and chaotic behavior, and I studied how load and damping affect it. The approach could support faster digital twins of compliant mechanisms.
 
 - **Nonlinear vibration absorbers (The Ohio State University).** As a summer research scholar, I analyzed the nonlinear dynamics of a vibration absorber using the multi-term harmonic balance method (MHBM). Unlike Runge-Kutta time integration, which steps the equations forward in time, MHBM turns the problem into a set of algebraic equations.
 
-<hr>
+
 
 
 <!-- ## Course projects

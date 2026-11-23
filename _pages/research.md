@@ -1,47 +1,49 @@
 ---
 layout: page
 permalink: /research/
-title: research
-description: What I work on and what I have done.
+title: Research
+description: What I have worked on.
 nav: true
 nav_order: 3
 ---
 
-My research sits at the intersection of **state estimation, system identification, and robust control**, applied to safety-critical systems. The thread running through it is *guaranteed* behavior under uncertainty. Rather than assuming noise is random with a known distribution, I model uncertainty as **bounded** and use set-based methods to reason about everything the system could be doing. Most of my work is in the Jain Research Lab at Purdue, advised by Prof. Neera Jain.
+My research sits at the intersection of **state estimation, system identification, and robust control**, applied to safety-critical systems. Rather than assuming noise is random with a known distribution, I treat uncertainty as **bounded** and use set-based methods to describe everything the system could be doing. 
 
 ## Human-aware automated vehicles
 
-**The question.** In conditionally automated (SAE Level 3) driving, the vehicle drives but the human must be ready to take over. How the human behaves depends on internal states the car cannot measure, such as trust and stress. If a vehicle could estimate those states, it could adapt, for example by changing how much information it shows the driver, to improve safety. This is the focus of my dissertation.
+**The question.** In conditionally automated (SAE Level 3) driving, the vehicle drives but the human must be ready to take over. How the human behaves depends on internal states the car cannot measure, such as trust and mental workload. If a vehicle could estimate those states, it could adapt, for example by changing how much information it shows the driver, to improve safety. This is the focus of my dissertation.
 
 **What I've done.**
 
-- **Modeling.** I developed a low-order hybrid dynamic model that captures continuous-valued cognitive states and the discrete decision to rely on automation or not, within a single framework. See *A Hybrid Dynamic Model for Predicting Human Cognition and Reliance During Automated Driving* (ITSC 2025).
-- **Estimation.** I designed a set-based estimator that characterizes uncertainty without probabilistic assumptions. On human-subject data it improved prediction accuracy by over 6% compared to a state-of-the-art particle filter. See *A Set-Based Framework for Estimating Human Cognitive States During Conditionally Automated Driving* (under review).
-- **Sensor scheduling.** I designed a real-time algorithm that decides when to solicit a measurement from the human, based on current and predicted uncertainty. It polled only 2 of 16 participants while matching the prediction accuracy of the offline schedule. See *A Sensor-Scheduling Approach to Predict Human Reliance During Automated Driving* (IFAC World Congress 2026).
-- **Experiments and data.** With collaborators I helped design the experiments behind this work and analyze the resulting cognitive, physiological and gaze data. See the HFES papers and the *Transportation Research Part F* article in my [publications]({{ '/publications/' | relative_url }}). The driving studies run on a medium-fidelity SAE Level 3 simulator built in Unreal Engine 5, which began as an undergraduate project I supervised.
+-**Experiment Design.** I co-designed a <a href="https://www.sciencedirect.com/science/article/pii/S1369847825004243">novel experiment</a> to understand what factors affect human behavior during automated driving. The experiment was deployed on a medium-fidelity driving simulator built using Unreal Engine 5.
+- **Modeling.** I developed a low-order <a href="https://ieeexplore.ieee.org/document/11423829">hybrid dynamic model</a> that captures continuous-valued cognitive states and the discrete decision to rely on automation or not, within a single framework. Unlike the majority of prior modeling efforts, I identify user-specific model parameters, meaning the model is personalized to the user.
+- **Estimation.** I designed a <a href="https://arxiv.org/abs/2608.02308">set-based estimator</a> that characterizes uncertainty without probabilistic assumptions, unlike prior work that treats uncertainty as independent and identically distributed (IID). I hypothesized that the factors that affect human behavior and their responses to prompts aren't well represented by IID probabilistic distributions. I showed on human-subject data that a bounded characterization improved prediction accuracy by over 6% compared to a probabilistic particle filter.
+- **Sensor scheduling.** I designed a real-time algorithm that decides *when to prompt the human to report their cognitive states*, based on current and predicted uncertainty. It polled only 2 of 16 participants while matching the prediction accuracy of the offline schedule.
+- **Multi-Modal Sensing.** I helped conduct an information-theoretic analysis to identify physiological indicators (heart rate, skin conductance) and eye-gaze-based indicators that can be used to infer changes in human behavior. We found that informative features and their time-scales vary substantially across individuals; nevertheless, incorporating these indicators in the state estimator may reduce uncertainty or the querying frequency.
 
-## System identification under bounded noise
+<!-- ## System identification under bounded noise
 
-Identifying a model from data usually assumes a noise distribution. In many real settings the only thing you can credibly say is that noise stays within known bounds. I work on identification methods built on **reachability analysis**, which return the full set of models consistent with the data and the bounds. See *A Reachability-Oriented Approach to Linear System Identification Under Unknown Bounded Noise* (ACC 2026).
+Identifying a model from data usually assumes a noise distribution. In many real settings the only thing you can credibly say is that noise stays within known bounds. I work on identification methods built on **reachability analysis**, which return the full set of models consistent with the data and the bounds. See *A Reachability-Oriented Approach to Linear System Identification Under Unknown Bounded Noise* (ACC 2026). -->
 
 ## Robust control co-design for thermal management
 
-In co-design, the plant and the controller are designed together. I extended set-based robust control co-design to a **nonlinear thermal management system**, guaranteeing safe operation under bounded uncertainty in heat loads. Existing linear robust co-design approaches cannot ensure that guarantee for this class of system. The tools include zonoLAB for set-based computation and Gurobi for optimization. See *Set-based Robust Control Co-Design for Nonlinear Systems: A Case Study for a Thermal Management System* (under review).
+In co-design, the plant and the controller are designed together. I worked with a colleague and extended set-based robust control co-design to a *nonlinear thermal management system*, guaranteeing safe operation (satisfying maximum temperature constraints) under unknown but bounded heat loads. Existing linear robust co-design approaches cannot ensure that guarantee for this class of system. 
 
 ## Earlier work
 
-Before my PhD, I worked on nonlinear dynamics and computational modeling:
+Before my PhD, I worked on creating mathematical models for nonlinear mechanical systems.
 
-- **Compliant rolling-sliding contact (IIT Tirupati).** I built a kinematic and dynamic nonlinear model of a compliant rolling-sliding contact mechanism using analytical and finite-element formulations, and simplified it to cut computation time by 40%. See the *Nonlinear Dynamics* article.
-- **Nonlinear vibration absorbers (The Ohio State University).** As a summer research scholar, I analyzed the nonlinear dynamics of a vibration absorber with the multi-term harmonic balance method, which cut solution time by two orders of magnitude relative to a Runge-Kutta benchmark.
 
-## Course projects
+- **Compliant rolling-sliding contact (IIT Tirupati).** I modeled a cam-follower mechanism with a flexible follower, building both a detailed nonlinear model and simpler, faster versions, one of which closely matches the detailed model. The analysis showed that compliance produces higher-period and chaotic behavior, and I studied how load and damping affect it. The approach could support faster digital twins of compliant mechanisms.
+- **Nonlinear vibration absorbers (The Ohio State University).** As a summer research scholar, I analyzed the nonlinear dynamics of a vibration absorber using the multi-term harmonic balance method (MHBM). Unlike Runge-Kutta time integration, which steps the equations forward in time, MHBM turns the problem into a set of algebraic equations. This cut solution time by two orders of magnitude relative to a Runge-Kutta benchmark.
 
-- **Trajectory-tracking MPC for an autonomous race car.** I implemented a feedback-linearized model predictive controller in Python within a ROS2 framework to track a trajectory on the Monza F1 circuit. Adding an iterative learning control scheme reduced lateral tracking error by over 50% across laps.
+<!-- ## Course projects
+
+- **Trajectory-tracking MPC for an autonomous race car.** I implemented a feedback-linearized model predictive controller in Python within a ROS2 framework to track a trajectory on the Monza F1 circuit. Adding an iterative learning control scheme reduced lateral tracking error by over 50% across laps. -->
 
 ## Methods and tools
 
-Set-based (set-membership) state estimation, reachability analysis, system identification, model predictive control, hybrid systems, robust control co-design, and nonlinear dynamical modeling. I work mostly in MATLAB, Python and C++.
+Set-based (set-membership) state estimation, reachability analysis, system identification, model predictive control, hybrid systems, robust control co-design, and nonlinear dynamical modeling. I work mostly in MATLAB.
 
 ## Mentoring
 

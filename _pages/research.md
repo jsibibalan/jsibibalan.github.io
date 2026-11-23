@@ -11,11 +11,9 @@ My research sits at the intersection of **state estimation, system identificatio
 
 ## Human-aware automated vehicles
 
-**The question.** In conditionally automated (SAE Level 3) driving, the vehicle drives but the human must be ready to take over. How the human behaves depends on internal states the car cannot measure, such as trust and mental workload. If a vehicle could estimate those states, it could adapt, for example by changing how much information it shows the driver, to improve safety. This is the focus of my dissertation.
+In conditionally automated (SAE Level 3) driving, the vehicle drives but the human must be ready to take over. How the human behaves depends on internal states the car cannot measure, such as trust and mental workload. If a vehicle could estimate those states, it could adapt, for example by changing how much information it shows the driver, to improve safety. This is the focus of my dissertation.
 
 <img src="{{ '/assets/img/human-aware-driving-v2.svg' | relative_url }}" alt="" style="max-width:100%; margin: 1rem 0;">
-
-**What I've done.**
 
 - **Experiment Design.** I co-designed a <a href="https://www.sciencedirect.com/science/article/pii/S1369847825004243">novel experiment</a> to understand what factors affect human behavior during automated driving. The experiment was deployed on a medium-fidelity driving simulator built using Unreal Engine 5.
 - **Modeling.** I developed a low-order <a href="https://ieeexplore.ieee.org/document/11423829">hybrid dynamic model</a> that captures continuous-valued cognitive states and the discrete decision to rely on automation or not, within a single framework. Unlike the majority of prior modeling efforts, I identify user-specific model parameters, meaning the model is personalized to the user. I also found that a decision-tree is a good choice for mapping the cognitive states to the user's reliance behavior.
@@ -38,9 +36,9 @@ In co-design, the system and the controller are designed together. An example of
 
 Before my PhD, I worked on creating mathematical models for nonlinear mechanical systems.
 
+<img src="{{ '/assets/img/cam-follower-schematic.svg' | relative_url }}" alt="" style="max-width:100%; margin: 1rem 0;">
 
 - **Compliant rolling-sliding contact (Indian Institute of Technology Tirupati).** I modeled a cam-follower mechanism with a flexible follower, building both a detailed nonlinear model and simpler, faster versions, one of which closely matches the detailed model. I used a combination of analytical and finite-element formulations. The analysis showed that compliance produces higher-period and chaotic behavior, and I studied how load and damping affect it. The approach could support faster digital twins of compliant mechanisms.
-<img src="{{ '/assets/img/cam-follower-schematic.svg' | relative_url }}" alt="" style="max-width:100%; margin: 1rem 0;">
 
 - **Nonlinear vibration absorbers (The Ohio State University).** As a summer research scholar, I analyzed the nonlinear dynamics of a vibration absorber using the multi-term harmonic balance method (MHBM). Unlike Runge-Kutta time integration, which steps the equations forward in time, MHBM turns the problem into a set of algebraic equations. 
 

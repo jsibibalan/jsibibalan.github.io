@@ -15,11 +15,11 @@ My research sits at the intersection of **state estimation, system identificatio
 
 **What I've done.**
 
--**Experiment Design.** I co-designed a <a href="https://www.sciencedirect.com/science/article/pii/S1369847825004243">novel experiment</a> to understand what factors affect human behavior during automated driving. The experiment was deployed on a medium-fidelity driving simulator built using Unreal Engine 5.
+- **Experiment Design.** I co-designed a <a href="https://www.sciencedirect.com/science/article/pii/S1369847825004243">novel experiment</a> to understand what factors affect human behavior during automated driving. The experiment was deployed on a medium-fidelity driving simulator built using Unreal Engine 5.
 - **Modeling.** I developed a low-order <a href="https://ieeexplore.ieee.org/document/11423829">hybrid dynamic model</a> that captures continuous-valued cognitive states and the discrete decision to rely on automation or not, within a single framework. Unlike the majority of prior modeling efforts, I identify user-specific model parameters, meaning the model is personalized to the user.
 - **Estimation.** I designed a <a href="https://arxiv.org/abs/2608.02308">set-based estimator</a> that characterizes uncertainty without probabilistic assumptions, unlike prior work that treats uncertainty as independent and identically distributed (IID). I hypothesized that the factors that affect human behavior and their responses to prompts aren't well represented by IID probabilistic distributions. I showed on human-subject data that a bounded characterization improved prediction accuracy by over 6% compared to a probabilistic particle filter.
 - **Sensor scheduling.** I designed a real-time algorithm that decides *when to prompt the human to report their cognitive states*, based on current and predicted uncertainty. It polled only 2 of 16 participants while matching the prediction accuracy of the offline schedule.
-- **Multi-Modal Sensing.** I helped conduct an information-theoretic analysis to identify physiological indicators (heart rate, skin conductance) and eye-gaze-based indicators that can be used to infer changes in human behavior. We found that informative features and their time-scales vary substantially across individuals; nevertheless, incorporating these indicators in the state estimator may reduce uncertainty or the querying frequency.
+- **Multi-Modal Sensing.** I helped conduct an <a href="https://journals.sagepub.com/doi/10.1177/10711813261484476">information-theoretic analysis</a> to identify physiological indicators (heart rate, skin conductance) and eye-gaze-based indicators that can be used to infer changes in human behavior. We found that informative features and their time-scales vary substantially across individuals; nevertheless, incorporating these indicators in the state estimator may reduce uncertainty or the querying frequency.
 
 <!-- ## System identification under bounded noise
 
@@ -27,15 +27,16 @@ Identifying a model from data usually assumes a noise distribution. In many real
 
 ## Robust control co-design for thermal management
 
-In co-design, the plant and the controller are designed together. I worked with a colleague and extended set-based robust control co-design to a *nonlinear thermal management system*, guaranteeing safe operation (satisfying maximum temperature constraints) under unknown but bounded heat loads. Existing linear robust co-design approaches cannot ensure that guarantee for this class of system. 
+I was fortunate to collaborate with my lab mate and apply set-based methods in a different application context.
+In co-design, the system and the controller are designed together. An example of this would be simultaneous design of the dimensions of aircraft components and its autopilot software. I worked on applying set-based robust control co-design to a *nonlinear thermal management system*, guaranteeing safe operation (satisfying maximum temperature constraints) under unknown but bounded heat loads. Existing linear robust co-design approaches cannot ensure that guarantee for this class of system. 
 
 ## Earlier work
 
 Before my PhD, I worked on creating mathematical models for nonlinear mechanical systems.
 
 
-- **Compliant rolling-sliding contact (IIT Tirupati).** I modeled a cam-follower mechanism with a flexible follower, building both a detailed nonlinear model and simpler, faster versions, one of which closely matches the detailed model. The analysis showed that compliance produces higher-period and chaotic behavior, and I studied how load and damping affect it. The approach could support faster digital twins of compliant mechanisms.
-- **Nonlinear vibration absorbers (The Ohio State University).** As a summer research scholar, I analyzed the nonlinear dynamics of a vibration absorber using the multi-term harmonic balance method (MHBM). Unlike Runge-Kutta time integration, which steps the equations forward in time, MHBM turns the problem into a set of algebraic equations. This cut solution time by two orders of magnitude relative to a Runge-Kutta benchmark.
+- **Compliant rolling-sliding contact (Indian Institute of Technology Tirupati).** I modeled a cam-follower mechanism with a flexible follower, building both a detailed nonlinear model and simpler, faster versions, one of which closely matches the detailed model. The analysis showed that compliance produces higher-period and chaotic behavior, and I studied how load and damping affect it. The approach could support faster digital twins of compliant mechanisms.
+- **Nonlinear vibration absorbers (The Ohio State University).** As a summer research scholar, I analyzed the nonlinear dynamics of a vibration absorber using the multi-term harmonic balance method (MHBM). Unlike Runge-Kutta time integration, which steps the equations forward in time, MHBM turns the problem into a set of algebraic equations. 
 
 <!-- ## Course projects
 
@@ -43,7 +44,7 @@ Before my PhD, I worked on creating mathematical models for nonlinear mechanical
 
 ## Methods and tools
 
-Set-based (set-membership) state estimation, reachability analysis, system identification, model predictive control, hybrid systems, robust control co-design, and nonlinear dynamical modeling. I work mostly in MATLAB.
+For my research and course projects, I've learned and applied state estimation (Kalman filtering, set-membership), reachability analysis, system identification, model predictive control (MPC), hybrid systems, robust control co-design, adaptive control, and nonlinear dynamical modeling. I work mostly in MATLAB, but I have also worked in Python and C++.
 
 ## Mentoring
 

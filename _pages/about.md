@@ -37,4 +37,4 @@ Toward this goal, my graduate research lies at the intersection of hybrid dynami
 
 Outside research, I serve as the Vice-President of the <a href="https://engineering.purdue.edu/Herrick/about/people/HSG">Herrick Student Resource Committee</a>, have mentored undergraduates through Purdue's <a href="https://engineering.purdue.edu/Engr/Research/EURO/students/about-SURF">SURF</a> program, and co-chaired the ICON Student Research Conference.
 
-Outside of graduate school, you can find me being an amateur at road cycling, gymming, running, or playing tennis. 
+Outside of graduate school, you can find me being an amateur at road cycling, gymming, running, or playing my bass guitar. 
